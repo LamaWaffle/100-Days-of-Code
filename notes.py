@@ -199,4 +199,4 @@ elif condition3:
 else:
     do this
 
-#Nat is skinny
+print("Nat is pooping")
