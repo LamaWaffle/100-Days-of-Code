@@ -6,10 +6,10 @@ cond3= (year%400)
 if cond1==0:
     if cond2<100:
         if cond3<400:
-            print("Leap year.")
+            print("Not Leap year.")
         else:
-            print("Not leap year.")
+            print("Leap year.")
     else:
-        print("Leap year.")
+        print("leap year.")
 else:
     print("Not leap year.")
