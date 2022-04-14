@@ -142,13 +142,20 @@ print(message)
 # DAY 3
 #
 
-# Basic syntax to test if a condition is true. If so, the code with execute, if not it will be skipped.
-# Anything that is indented will execute.
+# This is the basic syntax to test if a condition is true. If so, the indented code will be
+# executed, if not it will be skipped.
+if condition1:
+    do A
 
-if conditon:
-    do this
+# In addition to the initial If statement condition, you can add extra conditions to
+# test if the first condition is false. Once an elif condition is true, the rest of
+# the elif conditions are no longer checked and are skipped.
+elif condition2:
+    do B
+
+# This is a way to specify some code that will be executed if a condition is false.
 else:
-    do this
+    do C
 
 # Example below
 
@@ -169,7 +176,6 @@ height >= 160 # greater than or equal to
 5 % 2
 # result is 1.
 
-
 # Cannot change the code below
 number = int(input("Which number do you want to check? "))
 # Cannot change the code above
@@ -188,15 +194,28 @@ if condition:
 else:
     do this
 
-# if / elif / else condition:
-# with elif, once a condition is true, goes through the list, checking which is true.
-if condtion1:
-    do A
+# if / elif / else condition - you can add extra conditions to test if the initial condition is false.
+
+if condtion1: # condition1 is what were testing for.
+    do A # < this will be executed if the condition is met.
 elif condition2:
     do B
 elif condition3:
     do C
-else:
+else: # if conditions aren't met, it will execute this code.
     do this
 
-print(bool("Nat is pooping in the morning."))
+# Above is examples of only 1 conditions that would be executed.
+# Below is checking for multiple conditions:
+
+if condition1:
+    print("Do A")
+if condition2:
+    print("Do B")
+if condition3:
+    print("Do C")
+
+# Also use this += operator.
+bill += 3
+same as bill = bill + 3
+
