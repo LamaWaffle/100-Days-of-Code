@@ -4,8 +4,8 @@ cond2= (year%100)
 cond3= (year%400)
 
 if cond1==0:
-    if cond2<100:
-        if cond3<400:
+    if cond2>1:
+        if cond3>1:
             print("Not Leap year.")
         else:
             print("Leap year.")
