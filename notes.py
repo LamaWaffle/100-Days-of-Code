@@ -158,32 +158,15 @@ else:
     do C
 
 # Example below
-
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm?\n"))
-
-if height >= 120:
-    print(f"You are {height}cm, you can ride the rollercoaster :)")
+condition = True
+if condition:
+    x = 1
 else:
-    print("Sorry, you have to grow taller, short-ass.")
+    x = 0
+print(x)
 
-height = 160 #  = means assignment
-height == 160 # == means check equality
-height > 160  # greater than.
-height >= 160 # greater than or equal to
-
-# Modulo operator gives you the remainder result.
-5 % 2
-# result is 1.
-
-# Cannot change the code below
-number = int(input("Which number do you want to check? "))
-# Cannot change the code above
-
-if number % 2 == 0:
-    print("This is an even number.")
-else:
-    print("This is an odd number.")
+# A shortcut is to put it into one line. Shown below.
+x = 1 if condition else 0
 
 # Nested if / else
 if condition:
@@ -215,7 +198,17 @@ if condition2:
 if condition3:
     print("Do C")
 
-# Also use this += operator.
+# Also use this += operator. Adds the value back onto the variable.
 bill += 3
-same as bill = bill + 3
+# Same as..
+bill = bill + 3
+
+height = 160 #  = means assignment
+height == 160 # == means check equality
+height > 160  # greater than.
+height >= 160 # greater than or equal to
+
+# Modulo operator gives you the remainder result.
+5 % 2
+# result is 1.
 
