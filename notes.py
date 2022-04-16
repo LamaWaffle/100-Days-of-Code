@@ -193,7 +193,7 @@ else: # if conditions aren't met, it will execute this code.
     do this
 
 # Above is examples of only 1 conditions that would be executed.
-# Below is checking for multiple conditions:
+# Below is checking for multiple conditions(if none of these conditions is true, then continue without any changes):
 
 if condition1:
     print("Do A")
@@ -236,3 +236,19 @@ if age < 16 or age > 200:
 #   This wil flip the original result of the condition, eg. if it was true then, now its false.
 if not 3 > 1:
     print("something") #Will not be printed.
+
+#The DIFFERENCE between "nested if" Vs "elif":
+#Multiple if's or "nested if" means your code would go and check all the if conditions,
+#whereas in case of elif, if one if condition satisfies it would not check other conditions.
+
+#Indentation for multiple if's:
+# If the condition B is dependent to output of the condition A, in other word, the sequence of the condition matters( has to check A first then check B)
+# see example below, the indentation for "If event B" has to be the same with the output of the Event A which is "do x"
+# because condition A is true and x is executed. Then condition B will be checked.
+# If condition A is false >> z will be executed and "if condition B " code will be skipped
+if condition A:
+    do X
+    if condition B:
+        do y
+else:
+    do Z
