@@ -166,7 +166,7 @@ else:
 print(x)
 
 # A shortcut is to put it into one line. Shown below.
-x = 1 if condition else 0
+x = 1 if condition is true  else 0
 
 # Nested if / else
 if condition:
