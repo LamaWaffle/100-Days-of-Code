@@ -21,7 +21,8 @@ if intro.lower() == "y":
     light_switch = input("You can see a light in front of you, do you turn it on?\n")
     
     if light_switch == "y" and "yes" and "yeah":
-        door = print("The lights suddenly turn on, the bliding bright light is just too much for your weak, small eyes.You squint, sneeze and fart, resulting in 20/20 vision..\nYou can see a red door at the end of the hallway, covered in smokey bbq sauce..\nDo you walk up to it..?\n")
+        door = print("The lights suddenly turn on, the bliding bright light is just too much for your weak, small eyes. You squint, sneeze and fart, resulting in 20/20 vision..\n\nYou can see a red door at the end of the hallway, covered in smokey bbq sauce. Do you walk up to it..?\n")
+        door = input("Y or N ?\n")
         
         if door == "y":
             print("You skip and jump to the door, you are now a princess. Well Done, you've beaten the game!")
