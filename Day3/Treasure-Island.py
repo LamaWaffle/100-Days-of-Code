@@ -1,8 +1,3 @@
-
-from platform import python_branch
-from webbrowser import open_new_tab
-
-
 print(""" _                                                           
 88888b.  .d88b.  .d88b.  8888b. .d8888b 888  888.d8888b  
 888 "88bd8P  Y8bd88P"88b    "88b88K     888  88888K      
@@ -24,27 +19,20 @@ intro = input("Y or N ?\n")
 if intro.lower() == "y":
     print("\nYou are currently in a dark room, you feel confused.\nYou have no memory of how you got here..\n")
     light_switch = input("You can see a light in front of you, do you turn it on?\n")
+    
     if light_switch == "y":
-        print("Light turns on")
+        door = print("The lights suddenly turn on, the bliding bright light is just too much for your weak, small eyes.You squint, sneeze and fart, resulting in 20/20 vision..\nYou can see a red door at the end of the hallway, covered in smokey bbq sauce..\nDo you walk up to it..?\n")
+        
+        if door == "y":
+            print("You skip and jump to the door, you are now a princess. Well Done, you've beaten the game!")
+        else:
+            print("You fart your brains out...\nGAME OVER!")
 
     else:
         print("You feel too weak to do anything, you try to gather the energy to get up, but you break a hip while doing so.. Resulting in your immidiate death..\nYou slowly fade away until the mice eat your skin.\n\nGAME OVER!")
         exit()
         #Import its own file. Add exit() program if NO.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 else:
     intro.lower() == "n"
     exit()
