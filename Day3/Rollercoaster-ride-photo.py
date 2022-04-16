@@ -18,6 +18,10 @@ if height >= 120:
         bill = 7    # Updates bill to $7
         print("Youth tickets are $7.")
 
+    elif age >= 45 and age <= 55:
+        bill = 0    # Pension tickets are free
+        print("Pension tickets are free.")
+
     else:
         bill = 12  # Updates bill to $12
         print("Adult tickets are $12.")
