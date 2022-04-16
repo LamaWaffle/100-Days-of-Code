@@ -22,13 +22,13 @@ print("You've been trapped in this simulation.. Your goal is to escape..Do you u
 
 intro = input("Y or N ?\n")
 if intro.lower() == "y":
-    print("You are currently in a dark room, you feel confused.\n You have no memory of how you got here..\n")
-    light_switch = input("You can see a light in front of you, do you turn it on?\n>")
+    print("\nYou are currently in a dark room, you feel confused.\nYou have no memory of how you got here..\n")
+    light_switch = input("You can see a light in front of you, do you turn it on?\n")
     if light_switch == "y":
         print("Light turns on")
-        
+
     else:
-        print("You feel too weak to do anything, you try to gather the energy to get up, but you break a hip while doing so.. Resulting in your immidiate death..\n")
+        print("You feel too weak to do anything, you try to gather the energy to get up, but you break a hip while doing so.. Resulting in your immidiate death..\nYou slowly fade away until the mice eat your skin.\n\nGAME OVER!")
         exit()
         #Import its own file. Add exit() program if NO.
 
