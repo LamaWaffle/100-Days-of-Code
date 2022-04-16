@@ -251,3 +251,9 @@ if condition A:
         do y
 else:
     do Z
+
+#   Random Numbers
+
+import random
+numbers = random.randint(0, 100)
+random_float = random.random()
