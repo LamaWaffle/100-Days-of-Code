@@ -232,7 +232,8 @@ if age < 16 or age > 200:
 #   This wil flip the original result of the condition, eg. if it was true then, now its false.
 if not 3 > 1:
     print("something") #Will not be printed.
-
+    
+'''
 #The DIFFERENCE between "nested if" Vs "elif":
 #Multiple if's or "nested if" means your code would go and check all the if conditions,
 #whereas in case of elif, if one if condition satisfies it would not check other conditions.
@@ -242,6 +243,8 @@ if not 3 > 1:
 # see example below, the indentation for "If event B" has to be the same with the output of the Event A which is "do x"
 # because condition A is true and x is executed. Then condition B will be checked.
 # If condition A is false >> z will be executed and "if condition B " code will be skipped
+'''
+
 if condition A:
     do X
     if condition B:
