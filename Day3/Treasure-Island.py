@@ -1,17 +1,21 @@
+
 print(""" _                                                           
-| |                                                          
-| |_ _ __ ___  __ _ ___ _   _ _ __ ___ _ __ ___   __ _ _ __  
-| __| '__/ _ \/ _` / __| | | | '__/ _ \ '_ ` _ \ / _` | '_ \ 
-| |_| | |  __/ (_| \__ \ |_| | | |  __/ | | | | | (_| | |_) |
- \__|_|  \___|\__,_|___/\__,_|_|  \___|_| |_| |_|\__,_| .__/ 
-                                                      | |    
-                                                      |_|
+88888b.  .d88b.  .d88b.  8888b. .d8888b 888  888.d8888b  
+888 "88bd8P  Y8bd88P"88b    "88b88K     888  88888K      
+888  88888888888888  888.d888888"Y8888b.888  888"Y8888b. 
+888 d88PY8b.    Y88b 888888  888     X88Y88b 888     X88 
+88888P"  "Y8888  "Y88888"Y888888 88888P' "Y88888 88888P' 
+888                  888                                 
+888             Y8b d88P                                 
+888              "Y88P"  
 """)
 
-print("""
-Welcome to Treasure Island.
-Your mission is to find the treasure and get out alive!
-""")
+username = input("What is your name?\n")
+
+print("Welcome " + username )
+
+print("You've been trapped in this simulation.. Your goal is to escape..Do you understand?\n")
+intro = input("Y or N\n").lower()
 
 choice1 = input("Which way do you turn, left or right?\n").lower()
 
