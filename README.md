@@ -1,48 +1,42 @@
-# Print - Prints a string into the console.
-import this
-from tkinter import E
+# This is our 100 days of code journey :)
 
-
+### Print - Prints a string into the console.
 print("Hello There")
 
-# input prompt for the user
+### input prompt for the user
 input("What is your name? ")
 
-# Variables give a name to a piece of data, like a box with a label. Notice a str needs "" and an int doesnt.
+### Variables give a name to a piece of data, like a box with a label. Notice a str needs "" and an int doesnt.
 my_age = 12
 my_name = "NatYolo"
 
-# The += Operator - This is a convenient way of saying: take the previous value and add to it.
+### The += Operator - This is a convenient way of saying: take the previous value and add to it.
 my_age = 12
-my_age += 4
-# my age is now 16.
+my_age += 4 (my age is now 16.)
 
-# To add a paragraph break, a new paragraph put in \n
+### To add a paragraph break, a new paragraph put in \n
 print("Hello World\nHello World")
 
-#
-# Data Types
-#
-# Strings - "Hey" or "123" with double quotes.
-print("Hello")
+### Data Types
+Strings - "Hey" or "123" with double quotes.
 
-# Integer - Whole numbers without decimal places.
+### Integer - Whole numbers without decimal places.
 print(123)
 print(123 + 456)
 
-# Float - Floating point number, decimal number.
+### Float - Floating point number, decimal number.
 print(3.14159)
 
-# Boolean - Two values, either True or False.
+### Boolean - Two values, either True or False.
 True
 False
 
-# Subscript - pulling out a number from a string.
+### Subscript - pulling out a number from a string.
 print("Hello"[0])
 
-# Checking Data Types
+### Checking Data Types
 age = 23
-type(age) # This will print out the type of variable: <class 'int'>
+type(age) - This will print out the type of variable: <class 'int'>
 
 #  Converting Data Types
 float()
