@@ -20,7 +20,7 @@ if intro.lower() == "y":
     print("\nYou are currently in a dark room, you feel confused.\nYou have no memory of how you got here..\n")
     light_switch = input("You can see a light in front of you, do you turn it on?\n")
     
-    if light_switch == "y":
+    if light_switch == "y" and "yes" and "yeah":
         door = print("The lights suddenly turn on, the bliding bright light is just too much for your weak, small eyes.You squint, sneeze and fart, resulting in 20/20 vision..\nYou can see a red door at the end of the hallway, covered in smokey bbq sauce..\nDo you walk up to it..?\n")
         
         if door == "y":
@@ -32,7 +32,6 @@ if intro.lower() == "y":
         print("You feel too weak to do anything, you try to gather the energy to get up, but you break a hip while doing so.. Resulting in your immidiate death..\nYou slowly fade away until the mice eat your skin.\n\nGAME OVER!")
         exit()
         #Import its own file. Add exit() program if NO.
-        
 else:
     intro.lower() == "n"
     exit()
