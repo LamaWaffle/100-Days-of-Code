@@ -1,4 +1,8 @@
 # Print - Prints a string into the console.
+import this
+from tkinter import E
+
+
 print("Hello There")
 
 # input prompt for the user
@@ -198,17 +202,37 @@ if condition2:
 if condition3:
     print("Do C")
 
-# Also use this += operator. Adds the value back onto the variable.
+#   Also use this += operator. Adds the value back onto the variable.
 bill += 3
 # Same as..
 bill = bill + 3
 
-height = 160 #  = means assignment
-height == 160 # == means check equality
-height > 160  # greater than.
-height >= 160 # greater than or equal to
+
+> # Greater than
+< # Lesser than
+>= # Greater than or equal to
+<= # Lesser than or equal to
+== # Is equal to
+!=  # Is not equal to
 
 # Modulo operator gives you the remainder result.
 5 % 2
 # result is 1.
 
+#   Logical operators: AND , OR and NOT
+#   AND
+#   This expects both conditions either side of the 'and' to be true.
+s = 58
+if s < 60 and s > 50:
+    print("Your grade is C")
+
+#   OR
+#   This expects either of the conditions either side of the or to be true. Basically, both conditions cannot be false.
+age = 12
+if age < 16 or age > 200:
+    print("Can't drive")
+
+#   NOT
+#   This wil flip the original result of the condition, eg. if it was true then, now its false.
+if not 3 > 1:
+    print("something") #Will not be printed.
