@@ -1,4 +1,7 @@
-states_of_america = ["Delaware", "Pennsylvania", "New Jersey"]
+from os import stat
+
+
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 states = states_of_america
 
 # Specifies the indexed item listed, then changes its name.
