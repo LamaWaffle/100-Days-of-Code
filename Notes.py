@@ -209,7 +209,7 @@ bill = bill + 3
 >= # Greater than or equal to
 <= # Lesser than or equal to
 == # Is equal to
-!=  # Is not equal to
+!=  # Is not equal to (! =)
 
 # Modulo operator gives you the remainder result.
 5 % 2
@@ -232,28 +232,9 @@ if age < 16 or age > 200:
 #   This wil flip the original result of the condition, eg. if it was true then, now its false.
 if not 3 > 1:
     print("something") #Will not be printed.
-    
-'''
-#The DIFFERENCE between "nested if" Vs "elif":
-#Multiple if's or "nested if" means your code would go and check all the if conditions,
-#whereas in case of elif, if one if condition satisfies it would not check other conditions.
-
-#Indentation for multiple if's:
-# If the condition B is dependent to output of the condition A, in other word, the sequence of the condition matters( has to check A first then check B)
-# see example below, the indentation for "If event B" has to be the same with the output of the Event A which is "do x"
-# because condition A is true and x is executed. Then condition B will be checked.
-# If condition A is false >> z will be executed and "if condition B " code will be skipped
-'''
-
-if condition A:
-    do X
-    if condition B:
-        do y
-else:
-    do Z
 
 # Random Numbers
 
 import random
 numbers = random.randint(0, 100)
-random_float = random.random()
+random_float = random.random

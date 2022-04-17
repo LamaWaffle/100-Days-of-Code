@@ -1,6 +1,3 @@
-from os import stat
-
-
 states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 states = states_of_america
 
