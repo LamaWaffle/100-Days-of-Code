@@ -2,3 +2,8 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Conne
 
 
 dirty_dozen = ["Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes", "Celery", "Potatoes"]
+
+number_of_states = len(states_of_america) # Returns the number of items in the container (variable.)
+
+print(states_of_america[number_of_states - 1])
+
