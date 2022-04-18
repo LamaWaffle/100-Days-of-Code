@@ -20,7 +20,7 @@ if intro.lower() == "y":
     print("\nYou are currently in a dark room, you feel confused.\nYou have no memory of how you got here..\n")
     light_switch = input("You can see a light in front of you, do you turn it on?\n")
     
-    if light_switch == "y" and "yes" and "yeah":
+    if light_switch == "y" or "yes" or "yeah":
         door = print("The lights suddenly turn on, the bliding bright light is just too much for your weak, small eyes. You squint, sneeze and fart, resulting in 20/20 vision..\n\nYou can see a red door at the end of the hallway, covered in smokey bbq sauce. Do you walk up to it..?\n")
         door = input("Y or N ?\n")
         
