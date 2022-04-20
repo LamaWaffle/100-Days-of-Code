@@ -211,6 +211,7 @@ bill = bill + 3
 == # Is equal to
 !=  # Is not equal to (! =)
 
+
 # Modulo operator gives you the remainder result.
 5 % 2
 # result is 1.
@@ -233,8 +234,47 @@ if age < 16 or age > 200:
 if not 3 > 1:
     print("something") #Will not be printed.
 
-# Random Numbers
 
+# MODULES
+import Day2         # This will import the module, folder or file.
+print (Day2.age)    # This will print out that variable from the file. syntax == file.variable
+
+# Random Numbers
 import random
 numbers = random.randint(0, 100)
 random_float = random.random
+
+# 
+# Lists
+# 
+
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
+states = states_of_america  # Can create a variable from a list(variable).
+
+# Specifies the item from the list, 0 should be the indexed item from the list.
+(states[0])
+(states[-2]) # Index will also go backwards. 
+
+# Specifies the indexed item listed, then changes its name.
+(states[0]) = "New York"
+
+states.append("New state added to the END")
+states.extend(["New Landtown", "Bobtown", "State1"])    # adds this list to the current list.
+
+# List data type and dictionary data type, notice the {} brackets
+student_grades_list = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
+student_grades_dict = {"Marry": 8.2, "John":4.2, "Stacey":5.9}
+
+# Will add the list together.
+mysum = sum(student_grades_list)
+
+length = len(student_grades_dict)
+mean = mysum / length
+print(mean)
+
+max_grades = max(student_grades_list)
+print(max_grades)
+
+print(student_grades_list.count(10.0))  # Counts the amount of times 10 was in the list.
+
+print(random.choice(Name_of_List))      # Can also directly randomly pick from the list.
