@@ -6,5 +6,3 @@ number_of_states = len(states_of_america) # Returns the number of items in the c
 
 red_states = states_of_america[2]
 print(red_states)
-
-

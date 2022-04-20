@@ -276,3 +276,5 @@ max_grades = max(student_grades_list)
 print(max_grades)
 
 print(student_grades_list.count(10.0))  # Counts the amount of times 10 was in the list.
+
+print(random.choice(Name_of_List))      # Can also directly randomly pick from the list.

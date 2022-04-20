@@ -16,6 +16,9 @@ print(F"Your favourite animal is {favourite_animal}")
 Since there are 4 items in the list, but there isnt an item at position 4, last item is at position 3.
 list of items 4.
 need to choose between 0 and 3 to actually choose an item. (picking 4 doenst do anything.)
-
-
 """
+
+animals = ["Goat", "Banana", "Horse"]
+
+for i in range (1):
+    print(random.choice(animals))
