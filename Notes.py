@@ -331,3 +331,8 @@ grapes
 guava
 ['apple', 'grapes', 'guava']
 
+#Remember?
+#split() function>> "string".split()
+#it returns a list of all the words in the string, using str as the separator
+#(splits on all whitespace if left unspecified), optionally limiting the number of splits to num.
+
