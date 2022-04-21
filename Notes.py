@@ -278,3 +278,56 @@ print(max_grades)
 print(student_grades_list.count(10.0))  # Counts the amount of times 10 was in the list.
 
 print(random.choice(Name_of_List))      # Can also directly randomly pick from the list.
+
+
+#
+# DAY 5
+#
+
+#For Loop Function
+For item in the list of items
+#repreat the same task for all items in the list
+# item in the function could be any name that we use to refer an item in the list.
+
+fruits = ["apple","grapes","rambutan"]
+for fruit in fruits:
+    print(fruit)
+#outout from the example will be:
+apple
+grapes
+rambutan
+
+#what the code does basically assign the "fruit" as variable to each item and order it to print each one.>> check Thonny
+
+#*** Be careful with the indentation. Check your task whether it inside/outside For loop
+
+fruits = ['apple','grapes','guava']
+for fruit in fruits:
+  print(fruit) # 2 tasks print fruit and fruits>> look at the indentation >> this is inside for loop
+  print(fruits)
+
+#the list there are 3 items, this set will be repeated 3 times for each item in the list
+# output:
+apple
+['apple', 'grapes', 'guava']
+grapes
+['apple', 'grapes', 'guava']
+guava
+['apple', 'grapes', 'guava']
+
+#the task is outside the For loop
+
+fruits = ['apple','grapes','guava']
+for fruit in fruits:
+  print(fruit) #inside for loop
+print(fruits)#outside for loop
+
+#each item in the list will be print. Once it prints all 3 items in the list>> the for loop function is completed
+#then the next line of code will be executed.
+
+# output:
+apple
+grapes
+guava
+['apple', 'grapes', 'guava']
+
