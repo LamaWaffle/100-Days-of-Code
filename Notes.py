@@ -262,7 +262,7 @@ states = states_of_america  # Can create a variable from a list(variable).
 # Specifies the indexed item listed, then changes its name.
 (states[0]) = "New York"
 
-states.append("New state added to the END")
+states.append("New state") # add an item to the end of the list
 states.extend(["New Landtown", "Bobtown", "State1"])    # adds this list to the current list.
 
 # List data type and dictionary data type, notice the {} brackets
