@@ -286,7 +286,7 @@ thisdict = {
 print(thisdict) #output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
 #there is no year 1964
 
-print(len(thisdict)) # this cound how many keys in the dictionary, which is 3, consisting of "brand", "model, "year" .
+print(len(thisdict)) # this counts how many keys in the dictionary, which is 3, consisting of "brand", "model, "year" .
 
 
 # Will add the list together.
