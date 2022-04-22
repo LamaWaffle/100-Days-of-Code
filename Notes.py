@@ -35,6 +35,7 @@ False
 
 # Subscript - pulling out a number from a string.
 print("Hello"[0])
+#outout: H , "0" is the index in the string
 
 # Checking Data Types
 age = 23
@@ -45,6 +46,9 @@ float()
 int()
 str()
 
+#len() >> count the number of items in the list, or characters in strings.
+pringt(len("hello")) #output: 5 characters
+print(len("apple","grapes","orange")) #output: 3 items
 
 num_char = len(input("What is your name? \n"))
 new_num_char = str(num_char)
@@ -109,10 +113,10 @@ bmi_as_int = int(bmi)
 
 # Rounding numbers - 9 devided by 3, 2 decimals places
 print(round(9 / 3, 2))
-print(9 // 2) # Using // turns this float into an int.
+print(9 // 2) # Using // turns this float into an int.no rounding, just remove floats
 
 result = 4 / 2 # 4 / 2 = 2, result is 2.
-result /=2 # getting the result and device by 2.
+result /=2 # getting the result and devide by 2. >> output:1
 
 # f-Strings, can insert different variable into strings.
 score = 0  # string
@@ -153,7 +157,7 @@ if condition1:
 elif condition2:
     do B
 
-# This is a way to specify some code that will be executed if a condition is false.
+# This is a way to specify some code that will be executed if all the above conditions are false.
 else:
     do C
 
@@ -180,16 +184,16 @@ else:
 # if / elif / else condition - you can add extra conditions to test if the initial condition is false.
 
 if condtion1: # condition1 is what were testing for.
-    do A # < this will be executed if the condition is met.
+    do A # < this will be executed if the condition1 is met and skip all elif and else conditions below.
 elif condition2:
     do B
 elif condition3:
     do C
-else: # if conditions aren't met, it will execute this code.
+else: # if conditions above aren't met, it will execute this code.
     do this
 
 # Above is examples of only 1 conditions that would be executed.
-# Below is checking for multiple conditions(if none of these conditions is true, then continue without any changes):
+# Below is checking for multiple conditions(if none of these conditions is true, then continue without any changes to output):
 
 if condition1:
     print("Do A")
@@ -212,8 +216,8 @@ bill = bill + 3
 !=  # Is not equal to (! =)
 
 
-# Modulo operator gives you the remainder result.
-5 % 2
+# Modulo operator gives you the remainder result of uneven division
+5 % 2 # 2, 2 , 1
 # result is 1.
 
 #   Logical operators: AND , OR and NOT
@@ -264,6 +268,26 @@ states.extend(["New Landtown", "Bobtown", "State1"])    # adds this list to the 
 # List data type and dictionary data type, notice the {} brackets
 student_grades_list = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
 student_grades_dict = {"Marry": 8.2, "John":4.2, "Stacey":5.9}
+
+#Dictionaries are used to store data values in "key:value" pairs.
+#A dictionary is a collection which is ordered, changeable and do not allow duplicates.
+
+thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964} # "brand", "model, "year"  are key paired with values
+print(thisdict["brand"]) #output: "Ford"
+
+#do not allow duplicate in dictionary data:
+
+thisdict = {
+ "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict) #output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+#there is no year 1964
+
+print(len(thisdict)) # this cound how many keys in the dictionary, which is 3, consisting of "brand", "model, "year" .
+
 
 # Will add the list together.
 mysum = sum(student_grades_list)
