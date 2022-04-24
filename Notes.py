@@ -265,6 +265,9 @@ states = states_of_america  # Can create a variable from a list(variable).
 states.append("New state") # add an item to the end of the list
 states.extend(["New Landtown", "Bobtown", "State1"])    # adds this list to the current list.
 
+#list.index()>> the output will be the index number of the item in list
+state.index("Delaware") #output for this fn will be 0
+
 # List data type and dictionary data type, notice the {} brackets
 student_grades_list = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
 student_grades_dict = {"Marry": 8.2, "John":4.2, "Stacey":5.9}
