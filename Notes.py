@@ -251,9 +251,10 @@ random_float = random.random
 states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 states = states_of_america  # Can create a variable from a list(variable).
 
-# Specifies the item from the list, 0 should be the indexed item from the list.
-(states[0])
-(states[-2]) # Index will also go backwards. 
+(states[0])             # Specifies the item from the list, 0 is Delaware.
+(states[-2])            # Index will also go backwards.
+print (states[0])       # Prints Delaware - Needs brackets inside the list or square brackets.
+print (states[0][0])    # Prints D (First letter of the item from that list.)
 
 # Specifies the indexed item listed, then changes its name.
 (states[0]) = "New York"
