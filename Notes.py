@@ -35,6 +35,7 @@ False
 
 # Subscript - pulling out a number from a string.
 print("Hello"[0])
+#outout: H , "0" is the index in the string
 
 # Checking Data Types
 age = 23
@@ -45,6 +46,9 @@ float()
 int()
 str()
 
+#len() >> count the number of items in the list, or characters in strings.
+pringt(len("hello")) #output: 5 characters
+print(len("apple","grapes","orange")) #output: 3 items
 
 num_char = len(input("What is your name? \n"))
 new_num_char = str(num_char)
@@ -109,10 +113,10 @@ bmi_as_int = int(bmi)
 
 # Rounding numbers - 9 devided by 3, 2 decimals places
 print(round(9 / 3, 2))
-print(9 // 2) # Using // turns this float into an int.
+print(9 // 2) # Using // turns this float into an int.no rounding, just remove floats
 
 result = 4 / 2 # 4 / 2 = 2, result is 2.
-result /=2 # getting the result and device by 2.
+result /=2 # getting the result and devide by 2. >> output:1
 
 # f-Strings, can insert different variable into strings.
 score = 0  # string
@@ -153,7 +157,7 @@ if condition1:
 elif condition2:
     do B
 
-# This is a way to specify some code that will be executed if a condition is false.
+# This is a way to specify some code that will be executed if all the above conditions are false.
 else:
     do C
 
@@ -180,16 +184,16 @@ else:
 # if / elif / else condition - you can add extra conditions to test if the initial condition is false.
 
 if condtion1: # condition1 is what were testing for.
-    do A # < this will be executed if the condition is met.
+    do A # < this will be executed if the condition1 is met and skip all elif and else conditions below.
 elif condition2:
     do B
 elif condition3:
     do C
-else: # if conditions aren't met, it will execute this code.
+else: # if conditions above aren't met, it will execute this code.
     do this
 
 # Above is examples of only 1 conditions that would be executed.
-# Below is checking for multiple conditions(if none of these conditions is true, then continue without any changes):
+# Below is checking for multiple conditions(if none of these conditions is true, then continue without any changes to output):
 
 if condition1:
     print("Do A")
@@ -212,8 +216,8 @@ bill = bill + 3
 !=  # Is not equal to (! =)
 
 
-# Modulo operator gives you the remainder result.
-5 % 2
+# Modulo operator gives you the remainder result of uneven division
+5 % 2 # 2, 2 , 1
 # result is 1.
 
 #   Logical operators: AND , OR and NOT
@@ -259,12 +263,35 @@ print (states[0][0])    # Prints D (First letter of the item from that list.)
 # Specifies the indexed item listed, then changes its name.
 (states[0]) = "New York"
 
-states.append("New state added to the END")
+states.append("New state") # add an item to the end of the list
 states.extend(["New Landtown", "Bobtown", "State1"])    # adds this list to the current list.
+
+#list.index()>> the output will be the index number of the item in list
+state.index("Delaware") #output for this fn will be 0
 
 # List data type and dictionary data type, notice the {} brackets
 student_grades_list = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
 student_grades_dict = {"Marry": 8.2, "John":4.2, "Stacey":5.9}
+
+#Dictionaries are used to store data values in "key:value" pairs.
+#A dictionary is a collection which is ordered, changeable and do not allow duplicates.
+
+thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964} # "brand", "model, "year"  are key paired with values
+print(thisdict["brand"]) #output: "Ford"
+
+#do not allow duplicate in dictionary data:
+
+thisdict = {
+ "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict) #output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
+#there is no year 1964
+
+print(len(thisdict)) # this counts how many keys in the dictionary, which is 3, consisting of "brand", "model, "year" .
+
 
 # Will add the list together.
 mysum = sum(student_grades_list)
@@ -279,3 +306,61 @@ print(max_grades)
 print(student_grades_list.count(10.0))  # Counts the amount of times 10 was in the list.
 
 print(random.choice(Name_of_List))      # Can also directly randomly pick from the list.
+
+
+#
+# DAY 5
+#
+
+#For Loop Function
+For item in the list of items
+#repreat the same task for all items in the list
+# item in the function could be any name that we use to refer an item in the list.
+
+fruits = ["apple","grapes","rambutan"]
+for fruit in fruits:
+    print(fruit)
+#outout from the example will be:
+apple
+grapes
+rambutan
+
+#what the code does basically assign the "fruit" as variable to each item and order it to print each one.>> check Thonny
+
+#*** Be careful with the indentation. Check your task whether it inside/outside For loop
+
+fruits = ['apple','grapes','guava']
+for fruit in fruits:
+  print(fruit) # 2 tasks print fruit and fruits>> look at the indentation >> this is inside for loop
+  print(fruits)
+
+#the list there are 3 items, this set will be repeated 3 times for each item in the list
+# output:
+apple
+['apple', 'grapes', 'guava']
+grapes
+['apple', 'grapes', 'guava']
+guava
+['apple', 'grapes', 'guava']
+
+#the task is outside the For loop
+
+fruits = ['apple','grapes','guava']
+for fruit in fruits:
+  print(fruit) #inside for loop
+print(fruits)#outside for loop
+
+#each item in the list will be print. Once it prints all 3 items in the list>> the for loop function is completed
+#then the next line of code will be executed.
+
+# output:
+apple
+grapes
+guava
+['apple', 'grapes', 'guava']
+
+#Remember?
+#split() function>> "string".split()
+#it returns a list of all the words in the string, using str as the separator
+#(splits on all whitespace if left unspecified), optionally limiting the number of splits to num.
+
