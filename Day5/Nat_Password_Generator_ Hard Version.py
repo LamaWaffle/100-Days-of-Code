@@ -35,4 +35,4 @@ while numbers_quota != 0 or letters_quota != 0 or symbols_quota != 0: #as long a
     password += random.choice(symbols)
     symbols_quota = symbols_quota - 1
 
-print(f"Your password will be \"{password}\".\nWarning: Please take note of this! It's irretrievable after this is reset.")
+print(f"Your password will be \" {password} \".\nWarning: Please take note of this! It's irretrievable after this is reset.")
