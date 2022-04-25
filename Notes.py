@@ -362,4 +362,37 @@ guava
 #split() function>> "string".split()
 #it returns a list of all the words in the string, using str as the separator
 #(splits on all whitespace if left unspecified), optionally limiting the number of splits to num.
+#For Loop with range
+#Range function is to generate a range to loop through.
+# the syntax:
+for number in range (a, b): #the code will run through the range starting from "a" but not including "b"
+    print(number)
+#or
+for number in range (a, b, C): #the code will run through the range starting from "a" but not including "b" and "c" will how big the step is
+    print(number)
+
+for number in range (1,11,3): #the code will run through the range starting from "a" but not including "b" and "c" will how big the step is
+    print(number)
+#output will be: 1 4 7 10
+
+#random.choice(list) >> randomly pick an item out from the list
+
+# to run infinite loop until a certain condition is true >> user While syntax
+
+while BOOLEAN_EXPRESSION:
+    STATEMENTS
+
+#The flow of execution for a while statement works like this:
+
+#Evaluate the condition (BOOLEAN EXPRESSION), yielding False or True.
+
+#If the condition is false, exit the while statement and continue execution at the next statement.
+
+#If the condition is true, execute each of the STATEMENTS in the body and then go back to step 1.
+
+#The body consists of all of the statements below the header with the same indentation.
+
+#The body of the loop should change the value of one or more variables so that eventually the condition becomes false and the loop terminates.
+
+# Otherwise the loop will repeat forever, which is called an infinite loop.
 
